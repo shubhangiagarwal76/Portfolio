@@ -4319,7 +4319,7 @@ button.bg-dark:focus {
   .d-sm-inline-flex {
     display: inline-flex !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 360px) {
   .d-md-none {
     display: none !important; }
   .d-md-inline {
@@ -6154,7 +6154,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #003977;
+  background-color: #ff6666;
   font-family: 'Ubuntu', sans-serif; }
 
 @media (max-width: 575px) {
@@ -6190,7 +6190,7 @@ img::-moz-selection {
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #212529; }
+      background-color: #ff6666; }
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0; } }
@@ -6202,9 +6202,9 @@ img::-moz-selection {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
-    background-color: #003977; }
+    background-color: #ff6666; }
     #mainNav .navbar-toggler {
-      background-color: #f4fc53; } }
+      background-color: #ff3333; } }
 
 .btn {
   flex: 1 1 auto;
@@ -6266,6 +6266,13 @@ header {
     position: absolute;
     z-index: 1000;
     background: rgba(3, 6, 41, 0.31); }
+
+    @media(max-width: 575px)
+    {
+      header .carousel-inner .img-caption-hide{
+        font-size: 40px;
+      }
+    }
   header .carousel-inner .carousel-item .carousel-caption {
     z-index: 1001;
     bottom: 35%;
@@ -6280,9 +6287,20 @@ header {
       font-size: 65px; }
     header .carousel-inner .carousel-item .carousel-caption p {
       font-size: 20px; } }
+      @media (max-width: 500px)
+      {
+        header .carousel-inner .carousel-item .carousel-caption {
+      top: 2%;
+    }
+      }
   @media (max-width: 991px) {
+
     header .carousel-inner .carousel-item .carousel-caption h3 {
-      font-size: 45px; } }
+      margin-top: 0px;
+      font-size: 20px; } 
+      header carousel-inner .carousel-item .carousel-caption p {
+      font-size: 10px; }}
+  
   header .carousel-arrs span i {
     border: 2px solid rgba(100, 100, 100, 0.9);
     width: 50px;
